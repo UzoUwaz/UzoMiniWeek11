@@ -1,3 +1,4 @@
+[![CI](https://github.com/nogibjj/MiniWeek10/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/MiniWeek10/actions/workflows/cicd.yml)
 
 # IDS 706 Mini Project 10 - PySpark Data Processing
 
@@ -55,9 +56,23 @@ The dataset has the following features:
 - gap 
 
 ### 🗃️ Spark SQL Query
-I constructed the following query to analyze the average release year of the biopics alongside the number of subjects they feature:
-``` SELECT * FROM biopics WHERE number_of_subjects = 4 ;```
+I constructed the following query to select data from certain variables 
+``` "SELECT * FROM unisexdb WHERE total > 10000 AND male_share > 0.5;```
 
 
 More detailed information can be found [in this output markdown file](pyspark_output.md).
 
+## Example Output Below 
+
+|    |   ID | name    |   total |   male_share |   female_share |       gap |
+|---:|-----:|:--------|--------:|-------------:|---------------:|----------:|
+|  0 |    1 | Casey   |     nan |     0.584287 |       0.415713 | 0.168573  |
+|  1 |    2 | Riley   |     nan |     0.507639 |       0.492361 | 0.0152781 |
+|  2 |    3 | Jessie  |     nan |     0.477834 |       0.522166 | 0.0443315 |
+|  3 |    4 | Jackie  |     nan |     0.421133 |       0.578867 | 0.157735  |
+|  4 |    5 | Avery   |     nan |     0.335213 |       0.664787 | 0.329574  |
+|  5 |    6 | Jaime   |     nan |     0.561793 |       0.438207 | 0.123586  |
+|  6 |    7 | Peyton  |     nan |     0.433719 |       0.566281 | 0.132561  |
+|  7 |    8 | Kerry   |     nan |     0.483949 |       0.516051 | 0.0321023 |
+|  8 |    9 | Jody    |     nan |     0.352068 |       0.647932 | 0.295864  |
+|  9 |   10 | Kendall |     nan |     0.372367 |       0.627633 | 0.255267  |
