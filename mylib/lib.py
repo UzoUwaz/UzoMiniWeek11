@@ -41,7 +41,7 @@ def end_spark(spark):
 
 
 def extract(
-    url="",
+    url="https://github.com/nogibjj/MiniWeek10/raw/refs/heads/main/data/unisex_names_table.csv",
     file_path="data/unisex_names_table.csv",
     directory="data",
 ):
@@ -71,7 +71,7 @@ def load_data(spark, data="data/unisex_names_table.csv", name="unisexdb"):
         [
             StructField("ID", IntegerType(), True),
             StructField("name", StringType(), True),
-            StructField("total", IntegerType(), True),
+            StructField("total", DoubleType(), True),
             StructField("male_share", DoubleType(), True),
             StructField("female_share", DoubleType(), True),
             StructField("gap", DoubleType(), True),
