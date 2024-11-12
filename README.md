@@ -56,8 +56,8 @@ The dataset has the following features:
 - gap 
 
 ### 🗃️ Spark SQL Query
-I constructed the following query to select data from certain variables 
-``` "SELECT * FROM unisexdb WHERE total > 10000 AND male_share > 0.5;```
+I constructed a query to select data from certain variables 
+
 
 
 More detailed information can be found [in this output markdown file](pyspark_output.md).
