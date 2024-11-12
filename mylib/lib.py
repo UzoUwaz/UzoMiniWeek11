@@ -41,7 +41,7 @@ def end_spark(spark):
 
 
 def extract(
-    url="https://github.com/fivethirtyeight/data/raw/refs/heads/master/unisex-names/unisex_names_table.csv",
+    url="",
     file_path="data/unisex_names_table.csv",
     directory="data",
 ):
