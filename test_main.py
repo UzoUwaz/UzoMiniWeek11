@@ -65,11 +65,17 @@ def test_transform_load_data(spark):
 
 
 def test_sql_query(spark):
-    """Test the SQL query execution."""
-    # Ensure the query runs successfully
+    """
+    Test SQL query execution on the Delta table.
+    """
+    # Run the SQL query
     result = sql_query(spark)
+
+    # Validate that the query returns a DataFrame with rows
     assert result is not None
     assert result.count() > 0  # Ensure the query returns results
+    assert "Gender_Category" in result.columns  # Check if expected column exists
+
 
 
 if __name__ == "__main__":

@@ -3,9 +3,9 @@ from pyspark.sql import SparkSession
 
 def sql_query(spark: SparkSession):
     """
-    Perform a Spark SQL query on the unisex_names_delta table.
+    Perform a Spark SQL query on the unisex_names_delta table and return the result.
     """
-    # Run a SQL query to filter and process the data
+    # Query the Delta table
     result = spark.sql(
         """
         SELECT name, total, Gender_Category
@@ -14,7 +14,10 @@ def sql_query(spark: SparkSession):
         ORDER BY total DESC
         """
     )
-    
-    # Display the results
+
+    # Print results (optional)
     print("Query results:")
     result.show()
+
+    # Return the resulting DataFrame for further validation
+    return result
