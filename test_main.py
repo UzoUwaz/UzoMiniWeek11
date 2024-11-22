@@ -1,4 +1,3 @@
-import os
 import pytest
 from mylib.extract_transform_load import extract_data, transform, transform_load_data
 from mylib.query import sql_query
@@ -35,7 +34,7 @@ def test_transform(spark):
     transformed_df = transform(df)
     assert transformed_df is not None
     assert "Gender_Category" in transformed_df.columns  # Ensure new column is added
-    assert transformed_df.count() == df.count()  # Ensure no rows are lost during transformation
+    assert transformed_df.count() == df.count()  
 
 
 def test_transform_load_data(spark):
