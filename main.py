@@ -1,7 +1,7 @@
 from mylib.extract_transform_load import extract_data, transform, transform_load_data
 from mylib.query import sql_query
 from pyspark.sql import SparkSession
-from databricks.sdk.runtime import spark
+
 
 
 if __name__ == "__main__":
