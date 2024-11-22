@@ -1,4 +1,3 @@
-import os
 import pytest
 from pyspark.sql import SparkSession
 from mylib.extract_transform_load import extract_data, transform, transform_load_data
@@ -16,7 +15,8 @@ def spark():
 
 @pytest.fixture(scope="module")
 def setup_data(spark):
-    """Fixture to extract and transform data, ensuring data is available for all tests."""
+    """Fixture to extract and transform data, 
+    ensuring data is available for all tests."""
     # Adjust file paths to avoid issues with /dbfs/tmp
     download_path = "/tmp/unisex_names_table.csv"
     file_path = "/tmp/unisex_names_table.csv"
