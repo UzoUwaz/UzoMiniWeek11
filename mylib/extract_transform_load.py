@@ -50,10 +50,12 @@ def transform_load_data(df: DataFrame):
     spark.sql("DROP TABLE IF EXISTS unisex_names_delta")
 
     # Enable schema merge and write to Delta table
-    df.write.option("mergeSchema", "true").mode("overwrite").saveAsTable("unisex_names_delta")
+    df.write.option("mergeSchema", 
+                    "true").mode("overwrite").saveAsTable("unisex_names_delta")
     print("Data written to Databricks Delta table: 'unisex_names_delta'.")
 
     
     # Write the DataFrame as a Delta table
-    df.write.option("mergeSchema", "true").mode("overwrite").saveAsTable("unisex_names_delta")
+    df.write.option("mergeSchema", 
+                    "true").mode("overwrite").saveAsTable("unisex_names_delta")
     print("Data written to Databricks Delta table: 'unisex_names_delta'.")
