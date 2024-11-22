@@ -1,10 +1,11 @@
-[![CI](https://github.com/nogibjj/MiniWeek10/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/MiniWeek10/actions/workflows/cicd.yml)
+[![CI](https://github.com/UzoUwaz/UzoMiniWeek11/actions/workflows/cicd.yml/badge.svg)](https://github.com/UzoUwaz/UzoMiniWeek11/actions/workflows/cicd.yml)
 
-# IDS 706 Mini Project 10 - PySpark Data Processing
+# IDS 706 Mini Project 11 - PySpark Data Processing in DATABRICKS
 
 ### 🏗️ Requirements
 - Use PySpark to perform data processing on a large dataset
 - Include at least one Spark SQL query and one data transformation
+- Get this to run successfully in a databricks environment 
 
 ### 📂 Project Structure
 ```
@@ -18,7 +19,7 @@
 ├── main.py
 ├── mylib
 │   ├── __init__.py
-│   └── lib.py
+│   └──extract_transform_load.py and query.py
 ├── pyspark_output.md
 ├── requirements.txt
 └── test_main.py
@@ -27,8 +28,8 @@
 ### 🛠️ Setup Instructions
 #### 1. Clone the Repository
 ```
-git clone git@github.com:nogibjj/MiniWeek10.git
-cd MiniWeek10
+git clone https://github.com/UzoUwaz/UzoMiniWeek11.git
+cd UzoMiniWeek11
 ```
 
 #### 2. Install Dependencies
